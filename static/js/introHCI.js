@@ -10,13 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		/*$('.jumbotron h1').text("Experience Chan! It's not a lot of questions.\n"+
-			"Too many questions is the Chan disease.\n"+
-			"The best way is just to observe the noise of the world.\n"+
-			"The answer to your questions?\n"+
-			"Ask your own heart.");*/
+		$('.jumbotron h1').text("Javascript is connected");
 		$("#testjs").text("Please wait...");
-		//$(".jumbotron p").addClass("active");
 		$(".jumbotron p").toggleClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
@@ -27,8 +22,10 @@ function initializePage() {
 	    if (description.length == 0) {
 	       $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
 	    } else {
-	       description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
+	    	description.fadeToggle();
+	       //description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
 	    }
+
 	}
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
