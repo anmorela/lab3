@@ -16,7 +16,7 @@ function initializePage() {
 			"The answer to your questions?\n"+
 			"Ask your own heart.");*/
 		$("#testjs").text("Please wait...");
-		$(".jumbotron p").addClass("active");
+		//$(".jumbotron p").addClass("active");
 		$(".jumbotron p").toggleClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
