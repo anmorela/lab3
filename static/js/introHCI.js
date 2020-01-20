@@ -10,11 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Experience Chan! It's not a lot of questions.\n"+
+		/*$('.jumbotron h1').text("Experience Chan! It's not a lot of questions.\n"+
 			"Too many questions is the Chan disease.\n"+
 			"The best way is just to observe the noise of the world.\n"+
 			"The answer to your questions?\n"+
-			"Ask your own heart.");
+			"Ask your own heart.");*/
 		$("#testjs").text("Please wait...");
 		$(".jumbotron p").addClass("active");
 		$(".jumbotron p").toggleClass("active");
